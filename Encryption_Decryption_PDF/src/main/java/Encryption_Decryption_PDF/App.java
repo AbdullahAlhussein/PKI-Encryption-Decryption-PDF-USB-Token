@@ -55,40 +55,40 @@ public class App
           	String alias = null;
 		
 		
-          while (aliases.hasMoreElements()) {
-        	    
-          
-             alias = aliases.nextElement();
-    
+		  while (aliases.hasMoreElements()) {
 
-             cert = keyStore.getCertificate(alias);
-             x509Certificate =  (X509Certificate)cert ;
-            
-            
-            // x509Certificate.getKeyUsage()[0]  Check whether the certificate has : digitalSignature         
-            if( x509Certificate.getKeyUsage()[2] == true) {
-            	
-            Key key = keyStore.getKey(alias, null); // Here I try to access the private key of my hardware certificate
-            privateKey  =  (PrivateKey )key ; 
-            publicKey = x509Certificate.getPublicKey();
-            
 
-            break;
-           
-            }     
-          
-        }
-            
-            
-          File file = new File(outputFile);
-          file.getParentFile().mkdirs();
-          new App().manipulatePdf(outputFile);  
-          System.out.println(" The PDF file has been successfully encrypted ");
-    
+		     alias = aliases.nextElement();
+
+
+		     cert = keyStore.getCertificate(alias);
+		     x509Certificate =  (X509Certificate)cert ;
+
+
+		    // x509Certificate.getKeyUsage()[0]  Check whether the certificate has : digitalSignature         
+		    if( x509Certificate.getKeyUsage()[2] == true) {
+
+		    Key key = keyStore.getKey(alias, null); // Here I try to access the private key of my hardware certificate
+		    privateKey  =  (PrivateKey )key ; 
+		    publicKey = x509Certificate.getPublicKey();
+
+
+		    break;
+
+		    }     
+
+		}
+
+
+		  File file = new File(outputFile);
+		  file.getParentFile().mkdirs();
+		  new App().manipulatePdf(outputFile);  
+		  System.out.println(" The PDF file has been successfully encrypted ");
+
 
 	}
 		
-	catch(Exception e ) {
+	catch(Exception e ){
 			
 		e.printStackTrace();
 			
