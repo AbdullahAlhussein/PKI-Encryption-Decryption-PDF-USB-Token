@@ -24,10 +24,10 @@ public class App
 	
 	static PrivateKey  privateKey;
 	static PublicKey publicKey;
-    static String inputFileName = "C:\\Users\\ِ0570417090\\Desktop\\contract.pdf";
-    static String outputFile = "C:\\Users\\ِ0570417090\\Desktop\\Encryption_Decryption.pdf"; 
-    static Certificate cert ;
-    static X509Certificate x509Certificate ;
+    	static String inputFileName = "C:\\Users\\Hello\\Desktop\\contract.pdf";
+    	static String outputFile = "C:\\Users\\Hello\\Desktop\\Encryption_Decryption.pdf"; 
+    	static Certificate cert ;
+    	static X509Certificate x509Certificate ;
     
     public static void main( String[] args ) 
     {
@@ -36,27 +36,29 @@ public class App
 		   	
 		
 		// Create instance of SunPKCS11 provider
-     	String pkcs11Config = "C:\\Users\\\\ِ0570417090\\eclipse-workspace\\Encryption_Decryption_PDF\\config.cfg";
-    	java.io.ByteArrayInputStream pkcs11ConfigStream = new java.io.ByteArrayInputStream(pkcs11Config.getBytes());
-    	// Create a Provider for accessing the USB token by supplying the configuration.
-	    sun.security.pkcs11.SunPKCS11 providerPKCS11 = new sun.security.pkcs11.SunPKCS11(pkcs11Config);
-	    java.security.Security.addProvider(providerPKCS11);   
+     		String pkcs11Config = "C:\\Users\\\\Hello\\eclipse-workspace\\Encryption_Decryption_PDF\\config.cfg";
+    		java.io.ByteArrayInputStream pkcs11ConfigStream = new java.io.ByteArrayInputStream(pkcs11Config.getBytes());
+    		// Create a Provider for accessing the USB token by supplying the configuration.
+	    	sun.security.pkcs11.SunPKCS11 providerPKCS11 = new sun.security.pkcs11.SunPKCS11(pkcs11Config);
+	    	java.security.Security.addProvider(providerPKCS11);   
 
-	   // Create the Keystore for accessing certificates in the USB device by supplying the PIN.
-	    KeyStore.CallbackHandlerProtection chp = new KeyStore.CallbackHandlerProtection(new MyGuiCallbackHandler() {});
-	    KeyStore.Builder builder = KeyStore.Builder.newInstance("PKCS11", null, chp);
-	    KeyStore keyStore = builder.getKeyStore();
+	   	// Create the Keystore for accessing certificates in the USB device by supplying the PIN.
+	    	KeyStore.CallbackHandlerProtection chp = new KeyStore.CallbackHandlerProtection(new MyGuiCallbackHandler() {});
+	    	KeyStore.Builder builder = KeyStore.Builder.newInstance("PKCS11", null, chp);
+	    	KeyStore keyStore = builder.getKeyStore();
          
 	    
 	 
 	    
-	      // Enumerate items (certificates and private keys) in the KeyStore
-          java.util.Enumeration<String> aliases = keyStore.aliases();	 
-          String alias = null;
+	      	// Enumerate items (certificates and private keys) in the KeyStore
+          	java.util.Enumeration<String> aliases = keyStore.aliases();	 
+          	String alias = null;
+		
+		
           while (aliases.hasMoreElements()) {
         	    
           
-              alias = aliases.nextElement();
+             alias = aliases.nextElement();
     
 
              cert = keyStore.getCertificate(alias);
@@ -75,7 +77,7 @@ public class App
            
             }     
           
-          }
+        }
             
             
           File file = new File(outputFile);
@@ -84,14 +86,14 @@ public class App
           System.out.println(" The PDF file has been successfully encrypted ");
     
 
-		}
+	}
 		
-		catch(Exception e ) {
+	catch(Exception e ) {
 			
-			e.printStackTrace();
+		e.printStackTrace();
 			
-		}	
-    }
+	}	
+ }
     
     
     
