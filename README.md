@@ -177,15 +177,15 @@ When you run the program, a window will appear to enter the password to be able 
  privateKey  =  (PrivateKey )key ; 
  publicKey = x509Certificate.getPublicKey();
   ```
-  <br>
+<br>
   
-### Then the program will File encryption
+## Then the program will File encryption
 
 
 
- <br>
+<br>
  
-## The file can only be decrypted if the public and private keys match
+## The file can only be decrypted using a token and the public and private keys match
 
 ![112](https://user-images.githubusercontent.com/70335592/130415577-405fddc2-b456-48ce-b9bd-d15bc5a9b58c.png)
 
