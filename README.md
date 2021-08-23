@@ -184,21 +184,28 @@ When you run the program, a window will appear to enter the password to be able 
 
 <br>
 
+![102](https://user-images.githubusercontent.com/70335592/130415528-027085a1-2bb5-4d84-bc24-d8d60bf7f420.png)
 
 
  <br>
  
 
+![105](https://user-images.githubusercontent.com/70335592/130415551-40cd4d15-5bb5-468c-a91d-7668c08ff719.png)
 
  <br>
  
-## Signature information
+## Encryption information
 
 <br>
 
+![108](https://user-images.githubusercontent.com/70335592/130415562-d861430e-ce1d-489b-bc56-c99187aedd75.png)
 
 
+<br>
 
+## The file can only be decrypted if the public and private keys match
+
+![112](https://user-images.githubusercontent.com/70335592/130415577-405fddc2-b456-48ce-b9bd-d15bc5a9b58c.png)
 
 
 
