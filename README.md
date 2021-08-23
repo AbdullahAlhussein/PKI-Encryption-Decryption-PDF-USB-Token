@@ -81,31 +81,26 @@ OS version: eToken Java Applet 1.8.5
 ### 5 Add Maven pom.xml
 
  ```
- <dependencies>  
-     <dependency>
-    	<groupId>com.itextpdf</groupId>
-    	<artifactId>itextpdf</artifactId>
-    	<version>5.5.9</version>
-	</dependency>
+<dependencies>
 	<dependency>
-        <groupId>org.bouncycastle</groupId>
-        <artifactId>bcprov-jdk15on</artifactId>
-        <version>1.49</version>
-        <optional>true</optional>
-    </dependency>
-    <dependency>
-        <groupId>org.bouncycastle</groupId>
-        <artifactId>bcpkix-jdk15on</artifactId>
-        <version>1.49</version>
-        <optional>true</optional>
-    </dependency>
-    <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>4.8.2</version>
-        <scope>test</scope>
-    </dependency>   
-  </dependencies>
+		<groupId>junit</groupId>
+		<artifactId>junit</artifactId>
+		<version>4.8.2</version>
+		<scope>test</scope>
+	</dependency>  
+	<dependency>
+		<groupId>com.itextpdf</groupId>
+		<artifactId>kernel</artifactId>
+		<version>7.0.2</version>
+	</dependency>        
+	<dependency>
+		<groupId>org.bouncycastle</groupId>
+		<artifactId>bcprov-jdk15on</artifactId>
+		<version>1.49</version>
+		<optional>true</optional>
+	</dependency>
+</dependencies>
+
  ```
 
 
