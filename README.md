@@ -28,7 +28,7 @@ create/generate, modify and delete those objects [Read more PKCS11]( https://doc
 
 iText 7 for Java represents the next level of SDKs for developers that want to take advantage of the benefits PDF can bring. 
 Equipped with a better document engine, high and low-level programming capabilities and the ability to create, edit and enhance PDF documents, 
-iText 7 can be a boon to nearly every workflow. [Read more iText](https://itextpdf.com/en/solutions/electronic-signatures-pdf).
+iText 7 can be a boon to nearly every workflow. [Read more iText](https://itextpdf.com/en/solutions/pdf-security).
 
 ---
 
