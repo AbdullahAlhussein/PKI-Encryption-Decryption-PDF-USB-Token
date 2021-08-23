@@ -185,7 +185,7 @@ When you run the program, a window will appear to enter the password to be able 
 
 <br>
  
-## The file can only be decrypted using a USB token and the public and private keys match
+## The file can only be decrypted using a USB Token and the certificate's public and private keys match
 
 ![112](https://user-images.githubusercontent.com/70335592/130415577-405fddc2-b456-48ce-b9bd-d15bc5a9b58c.png)
 
