@@ -177,7 +177,11 @@ When you run the program, a window will appear to enter the password to be able 
   
 ## Then the program will Encrypt file
 
+<br>
 
+![pgp-encryption-decryption-process (2)](https://user-images.githubusercontent.com/70335592/212955374-2c7516bb-06e7-41ab-80a4-e0553569cb94.jpg)
+
+---
 
 <br>
  
